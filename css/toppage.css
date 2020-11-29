@@ -1,1 +1,53 @@
-body.page-top {background: red;}
+body {background: rgb(128, 128, 128)}
+
+/*ーーーーーーーーーーヘッダーーーーーーーーーーー*/
+
+ul.head-menu {
+    display: flex;
+    height: 2rem;
+    margin: 0 auto;
+    width: 1000px;
+}
+ul.head-menu > li {/*親階層のみ幅を25%にする*/
+    width: 30%;
+}
+/*全てのリスト・リンク共通*/
+ul.head-menu li {
+    list-style: none;
+    position: relative;
+}
+ul.head-menu li a {
+    background: #88888800;
+    border-right: 1px solid #eee;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    text-shadow: 5px 5px 3px #ccd7da;/*テキストの水平方向の距離 垂直方向の距離 影のぼかし半径 影の色*/
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    
+}
+ul.head-menu li a:hover {/*カーソルが真上に来た時*/
+    color: #0f0f0f;
+}
+/*子階層以降*/
+ul.head-menu li li {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;/*ドロップダウンする速度*/
+}
+ul.head-menu li li a {
+    border-top: 1px solid #eee;/*ドロップダウンの隙間*/
+}
+ul.head-menu li:hover > ul > li {
+    height: 2rem;/*ドロップダウンの隙間の広さ*/
+    overflow: visible;
+}
+
+/*ーーーーーーーーーーボディーーーーーーーーーー*/
+
+
+
