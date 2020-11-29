@@ -1,6 +1,10 @@
-body {background: rgb(128, 128, 128)}
-
+body {background: rgb(77, 77, 77)}
 /*ーーーーーーーーーーヘッダーーーーーーーーーーー*/
+header {
+    display: block;
+    background-color:rgb(77, 77, 77);
+    padding-bottom: 30px;
+    }
 
 ul.head-menu {
     display: flex;
@@ -47,7 +51,64 @@ ul.head-menu li:hover > ul > li {
     overflow: visible;
 }
 
-/*ーーーーーーーーーーボディーーーーーーーーーー*/
+/*ーーーーーーーーーーメインーーーーーーーーーー*/
+main.main-area {
+    background: rgb(229, 234, 235);
+    margin: -10px;
+}
 
+section.dialog {
+    padding-left: 60%;
+    padding-top: 10%;
+}
 
+section.dialog h1{
+    font-size: xx-large;
+}
 
+section.dialog p {
+
+}
+
+/*ーーーーーーーーーーフッダーーーーーーーーーーー*/
+footer {
+    display: block;
+    background-color:rgb(77, 77, 77);
+    }
+
+ul.foot-menu {
+    display: flex;
+    height: 2rem;
+    margin: 0 auto;
+    width: 700px;
+}
+ul.foot-menu > li {/*親階層のみ幅を25%にする*/
+    width: 20%;
+}
+/*全てのリスト・リンク共通*/
+ul.foot-menu li {
+    list-style: none;
+    position: relative;
+    right: -70%;
+    bottom: 100%;
+}
+ul.foot-menu li a {
+    background: #88888800;
+    border-right: 1px solid #eee;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    display: block;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;  
+}
+ul.head-menu li a:hover {/*カーソルが真上に来た時*/
+    color: #0f0f0f;
+}
+
+p.copyright {
+    color: #ffffff;
+    text-align: right;
+}
