@@ -63,18 +63,32 @@ body {
     /*animationZoom1という名前のキーフレームを5秒かけて拡大、forwardsで終了時に設定値のままにする*/
 }
 
-.top-message {
-    text-align: center;
-    padding: 10px 30px 50px 30px;
-    margin-top: -50px;
-    /*↑→↓←*/
-}
-
 @keyframes animationZoom1 {
     100% {
         transform: scale(0.7)
     }
     /*倍率*/
+}
+
+.top-message {
+    text-align: center;
+    padding: 10px 30px 50px 30px;
+    margin-top: -50px;
+    animation: textCutin 2s ease-in-out both;
+    /*both:開始時、終了時のスタイルがアニメ開始前後に適用*/
+    animation-delay: 2.5s;
+    /*↑→↓←*/
+}
+
+@keyframes textCutin {
+    0% {
+        opacity: 0;
+        /*透明*/
+    }
+    100% {
+        opacity: 1;
+        /*不透明*/
+    }
 }
 
 
