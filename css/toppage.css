@@ -50,14 +50,15 @@ ul.head-menu li a:hover {
 body {
     margin: 0px;
     -webkit-text-size-adjust: 100%;
-}
-
-body {
     background: rgb(255, 249, 222)
 }
 
-.zoom {
+.main-area {
+    /*すべてのメイン要素*/
     text-align: center;
+}
+
+.zoom {
     padding: 10px 100px 10px 100px;
     animation: animationZoom1 2.5s ease-in-out forwards;
     /*animationZoom1という名前のキーフレームを5秒かけて拡大、forwardsで終了時に設定値のままにする*/
