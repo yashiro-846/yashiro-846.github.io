@@ -137,6 +137,22 @@ body {
 }
 
 
+/*ーーーーーーーメインーproduct用ーーーーーーーー*/
+
+.product .boxlist .box {
+    text-decoration: none;
+    color: rgb(59, 56, 56);
+    font-size: 200%;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.product .boxlist img {
+    width: 500px;
+    display: inline-block;
+}
+
+
 /*ーーーーーーーーーーフッダーーーーーーーーーーー*/
 
 footer {
