@@ -58,6 +58,9 @@ body {
     text-align: center;
 }
 
+
+/*ーーーーーーメインートップページ用ーーーーーー*/
+
 .zoom {
     padding: 10px 100px 10px 100px;
     animation: animationZoom1 2.5s ease-in-out forwards;
@@ -91,6 +94,17 @@ body {
         /*不透明*/
     }
 }
+
+
+/*ーーーーーーーメインーprofile用ーーーーーーーー*/
+
+.section {}
+
+.profile {
+    display: flex;
+}
+
+.p-box {}
 
 
 /*ーーーーーーーーーーフッダーーーーーーーーーーー*/
