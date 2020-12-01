@@ -74,7 +74,7 @@ body {
 /*ーーーーーーメインートップページ用ーーーーーー*/
 
 .zoom {
-    padding: 10px 100px 10px 100px;
+    padding: 10px 100px 0px 100px;
     animation: animationZoom1 2.5s ease-in-out forwards;
     /*animationZoom1という名前のキーフレームを5秒かけて拡大、forwardsで終了時に設定値のままにする*/
 }
@@ -88,7 +88,7 @@ body {
 
 .top-message {
     text-align: center;
-    padding: 10px 30px 50px 30px;
+    padding: 0px 30px 50px 30px;
     margin-top: -50px;
     animation: textCutin 2s ease-in-out both;
     /*both:開始時、終了時のスタイルがアニメ開始前後に適用*/
@@ -151,6 +151,28 @@ footer {
     /*←絶対位置*/
     bottom: 0;
     /*下に固定*/
+}
+
+.fa-twitter {
+    background: #00a1e9;
+}
+
+.fa-github {
+    background: #313131;
+}
+
+.link i {
+    padding: 2px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.link a {
+    padding: 10px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
 }
 
 .copyright {
