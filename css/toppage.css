@@ -1,3 +1,15 @@
+.all {
+    min-height: 100vh;
+    /*ブラウザの高さ100％*/
+    position: relative;
+    /*←相対位置*/
+    padding-bottom: 200px;
+    /*←footerの高さ*/
+    box-sizing: border-box;
+    /*←全て含めてmin-height:100vhに*/
+}
+
+
 /*ーーーーーーーーーーヘッダーーーーーーーーーーー*/
 
 header {
@@ -131,9 +143,14 @@ body {
 /*ーーーーーーーーーーフッダーーーーーーーーーーー*/
 
 footer {
+    width: 100%;
     display: block;
-    padding: 10px;
+    padding: 10px 30px 30px 30px;
     background-color: rgb(77, 77, 77);
+    position: absolute;
+    /*←絶対位置*/
+    bottom: 0;
+    /*下に固定*/
 }
 
 p.copyright {
