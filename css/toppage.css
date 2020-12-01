@@ -15,9 +15,10 @@
 header {
     width: 100%;
     display: block;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 10px 10px 10px;
     /*↑→↓←*/
     background-color: rgb(77, 77, 77);
+    border-bottom: 10px solid rgb(37, 37, 37);
 }
 
 ul.head-menu {
@@ -36,7 +37,7 @@ ul.head-menu li {
 ul.head-menu li a {
     display: block;
     width: 100%;
-    padding: 10px 0;
+    padding: 15px 0;
     text-decoration: none;
     color: #ccc;
     font-weight: bold;
@@ -74,7 +75,7 @@ body {
 /*ーーーーーーメインートップページ用ーーーーーー*/
 
 .zoom {
-    padding: 10px 100px 0px 100px;
+    padding: 0px 100px 0px 100px;
     animation: animationZoom1 2.5s ease-in-out forwards;
     /*animationZoom1という名前のキーフレームを5秒かけて拡大、forwardsで終了時に設定値のままにする*/
 }
@@ -145,8 +146,9 @@ body {
 footer {
     width: 100%;
     display: block;
-    padding: 10px 30px 30px 30px;
+    padding: 10px 30px 30px 10px;
     background-color: rgb(77, 77, 77);
+    border-top: 10px solid rgb(37, 37, 37);
     position: absolute;
     /*←絶対位置*/
     bottom: 0;
