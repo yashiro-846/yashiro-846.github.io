@@ -49,10 +49,6 @@ ul.head-menu li.current {
     border: 3px solid rgb(255, 255, 255);
 }
 
-ul.head-menu li.current a {
-    color: rgb(255, 117, 117);
-}
-
 ul.head-menu li a:hover {
     color: #E71B1F;
 }
@@ -69,6 +65,10 @@ body {
 .main-area {
     /*すべてのメイン要素*/
     text-align: center;
+}
+
+.main-area h1 {
+    border-bottom: 2px solid rgb(61, 57, 57);
 }
 
 
