@@ -45,31 +45,81 @@ header .headline {
 
 .menu-btn span:before {
     bottom: 8px;
-    /*メニューの上の棒*/
+    /*メニューの上の棒の位置*/
 }
 
 .menu-btn span:after {
     top: 8px;
-    /*メニューの下の棒*/
+    /*メニューの下の棒の位置*/
 }
 
-.nav {
-    text-align: right;
-    /*動いてない*/
+#menu-btn-check:checked~.menu-btn span {
+    /*同じ階層にある要素同士であれば隣接しなくても後者にもスタイル適応*/
+    background-color: rgba(255, 255, 255, 0);
+    /*メニューオープン時は真ん中の線を透明にする*/
 }
 
-.nav-list {
-    display: flex;
-    position: relative;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0 auto;
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
 }
 
-.nav-list-item {
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+    /*チェックボックスを非表示*/
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: darkslategray;
+    transition: all 0.5s;
+}
+
+#menu-btn-check:checked~.menu {
+    left: 0;
+    /*メニューを画面内へ*/
+}
+
+.menu-list {
+    padding: 70px 10px 0;
+}
+
+.menu-list-item {
+    border-bottom: solid 1px #ffffff;
     list-style: none;
-    padding: 10px;
-    margin: 0 20px;
+}
+
+.menu-list-item a {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+
+.menu-list-item a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
 }
 
 main {
