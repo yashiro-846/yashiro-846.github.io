@@ -3,32 +3,44 @@
     padding: 0;
 }
 
-header {
-    max-width: 100%;
-    height: auto;
-    padding: 15px 0;
-    margin: 0 auto;
-    text-align: center;
-    background-color: rgb(5, 160, 160);
+body {
+    margin: 0px;
+    -webkit-text-size-adjust: 100%;
 }
 
-header .headline {
+header {
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 15px 0;
+    margin: 0;
+    text-align: left;
+    background-color: lightseagreen;
+}
+
+.headline {
+    width: 100%;
     padding: 15px 15px;
     text-align: left;
     font-size: 32px;
+    color: #fff;
 }
 
 .menu-btn {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 15px;
     display: flex;
     height: 60px;
     width: 60px;
     justify-content: center;
     align-items: center;
     z-index: 90;
-    background-color: #3584bb;
+    background-color: rgba(255, 255, 255, 0);
+    ;
 }
 
 .menu-btn span,
@@ -56,7 +68,7 @@ header .headline {
 #menu-btn-check:checked~.menu-btn span {
     /*同じ階層にある要素同士であれば隣接しなくても後者にもスタイル適応*/
     background-color: rgba(255, 255, 255, 0);
-    /*メニューオープン時は真ん中の線を透明にする*/
+    /*メニューオープン時はハンバーガーメニューの真ん中の線を透明にする*/
 }
 
 #menu-btn-check:checked~.menu-btn span::before {
@@ -82,11 +94,11 @@ header .headline {
     left: 100%;
     z-index: 80;
     background-color: darkslategray;
-    transition: all 0.5s;
+    transition: all 0.8s;
 }
 
 #menu-btn-check:checked~.menu {
-    left: 0;
+    left: 85%;
     /*メニューを画面内へ*/
 }
 
@@ -122,9 +134,16 @@ header .headline {
     top: 16px;
 }
 
+
+/*--本文--*/
+
 main {
     width: 100%;
     text-align: center;
+}
+
+.topimg {
+    width: 50px;
 }
 
 footer {
@@ -132,13 +151,10 @@ footer {
     height: 120%;
     text-align: center;
     padding: 50px 0;
-    background-color: #cab643;
-}
-
-.footer-text {
     color: #fff;
+    background-color: lightseagreen;
 }
 
-ul.footer-menu li {
+.footer-menu li {
     display: inline;
 }
