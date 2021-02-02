@@ -150,8 +150,33 @@ main {
     z-index: -1;
 }
 
+.description {
+    margin: 50px;
+}
+
 .logo {
     width: 500px;
+}
+
+.topic-title {
+    margin: 20px;
+}
+
+.topic-nav-list-item {
+    display: inline-flex;
+}
+
+.topic-nav-list-item-content {
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.topic-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
 }
 
 footer {
