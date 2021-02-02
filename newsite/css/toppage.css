@@ -90,7 +90,7 @@ header {
 }
 
 .menu {
-    width: 100%;
+    width: 12%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -101,8 +101,8 @@ header {
 }
 
 #menu-btn-check:checked~.menu {
-    left: 85%;
-    /*メニューを画面内へ*/
+    left: 88%;
+    /*メニューを画面内へ(100-.menuのwidth=left)*/
 }
 
 .menu-list {
@@ -110,7 +110,7 @@ header {
 }
 
 .menu-list-item-now {
-    border-bottom: solid 5px #ff8e3c;
+    border-bottom: solid 4px #ff8e3c;
     list-style: none;
     padding: 7px;
 }
@@ -118,11 +118,11 @@ header {
 .menu-list-item-now a {
     display: block;
     width: 100%;
-    font-size: 30px;
+    font-size: 25px;
     box-sizing: border-box;
     color: #d9376e;
     text-decoration: none;
-    padding: 9px 15px 10px 0;
+    padding: 5px 15px 5px 0;
     position: relative;
 }
 
@@ -135,11 +135,11 @@ header {
 .menu-list-item a {
     display: block;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     box-sizing: border-box;
     color: #fff;
     text-decoration: none;
-    padding: 9px 15px 10px 0;
+    padding: 5px 15px 5px 0;
     position: relative;
 }
 
@@ -191,7 +191,8 @@ main {
 }
 
 .topics {
-    margin: 50px 0;
+    margin: 50px auto;
+    max-width: 1200px;
     padding: 0;
 }
 
