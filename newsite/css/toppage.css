@@ -7,7 +7,7 @@ body {
     margin: 0px;
     -webkit-text-size-adjust: 100%;
     position: relative;
-    background-color: rgb(231, 226, 201)
+    background-color: #eff0f3;
 }
 
 header {
@@ -20,8 +20,8 @@ header {
     padding: 15px 0;
     margin: 0;
     text-align: left;
-    background-color: lightseagreen;
-    box-shadow: 0px 5px 3px rgba(7, 46, 34, 0.507);
+    background-color: #2a2a2a;
+    box-shadow: 0px 3px 10px rgba(7, 46, 34, 0.507);
 }
 
 .headline {
@@ -29,7 +29,7 @@ header {
     padding: 15px 15px;
     text-align: left;
     font-size: 32px;
-    color: #fff;
+    color: #eff0f3;
 }
 
 .menu-btn {
@@ -43,7 +43,6 @@ header {
     align-items: center;
     z-index: 90;
     background-color: rgba(255, 255, 255, 0);
-    ;
 }
 
 .menu-btn span,
@@ -97,7 +96,7 @@ header {
     top: 0;
     left: 100%;
     z-index: 80;
-    background-color: darkslategray;
+    background-color: #2a2a2a;
     transition: all 0.8s;
 }
 
@@ -107,20 +106,38 @@ header {
 }
 
 .menu-list {
-    padding: 70px 10px 0;
+    padding: 108px 10px 0;
+}
+
+.menu-list-item-now {
+    border-bottom: solid 5px #ff8e3c;
+    list-style: none;
+    padding: 7px;
+}
+
+.menu-list-item-now a {
+    display: block;
+    width: 100%;
+    font-size: 30px;
+    box-sizing: border-box;
+    color: #d9376e;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
 }
 
 .menu-list-item {
-    border-bottom: solid 1px #ffffff;
+    border-bottom: solid 2px #ff8e3c;
     list-style: none;
+    padding: 7px;
 }
 
 .menu-list-item a {
     display: block;
     width: 100%;
-    font-size: 15px;
+    font-size: 25px;
     box-sizing: border-box;
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     padding: 9px 15px 10px 0;
     position: relative;
@@ -154,7 +171,18 @@ main {
 }
 
 .description {
-    margin: 50px;
+    margin: 0 0 50px 0;
+    padding: 50px 0;
+    color: #0d0d0d;
+    background-color: #eff0f3;
+}
+
+.intro {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0 100px 0;
+    border-bottom: solid 2px #2a2a2a;
 }
 
 .logo {
@@ -162,12 +190,19 @@ main {
     filter: drop-shadow(5px 5px 3px rgba(7, 46, 34, 0.651))
 }
 
+.topics {
+    margin: 50px 0;
+    padding: 0;
+}
+
 .topic-title {
-    margin: 20px;
+    margin: 30px;
+    color: #0d0d0d;
 }
 
 .topic-nav-list-item {
-    margin: 0px;
+    margin: -7px;
+    /*topicの謎の間隔を詰める用*/
     display: inline-flex;
 }
 
@@ -175,7 +210,7 @@ main {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    background-color: rgb(248, 248, 248);
+    background-color: #fffffe;
 }
 
 .topic-img {
@@ -185,26 +220,35 @@ main {
 }
 
 .topic-nav-list-item-content-title {
-    background-color: rgb(139, 209, 255);
+    color: #fff;
+    background-color: #d9376e;
 }
 
 .topic-nav-list-item-content-subtitle {
-    margin: 10px;
+    margin: 10px 20px;
     padding: 10px;
-    border: 10px;
     border-top: solid 1px;
     border-bottom: solid 1px;
 }
 
+.topic-nav-list-item-content-text {
+    margin: 10px 20px;
+}
+
 footer {
     width: 100%;
-    height: 120%;
+    height: 100%;
     text-align: center;
-    padding: 50px 0;
+    padding: 25px 0;
     color: #fff;
-    background-color: lightseagreen;
+    background-color: #2a2a2a;
+}
+
+.footer-menu {
+    padding-bottom: 30px;
 }
 
 .footer-menu li {
     display: inline;
+    font-size: 20px;
 }
