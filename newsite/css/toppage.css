@@ -171,10 +171,27 @@ main {
 }
 
 .description {
-    margin: 0 0 50px 0;
-    padding: 50px 0;
+    margin: 50px 0;
+    padding: 0;
     color: #0d0d0d;
     background-color: #eff0f3;
+}
+
+.topback {
+    background: url("../img/backtest.jpg");
+    width: 100vw;
+    height: 507px;
+    position: absolute;
+}
+
+@keyframes moving {
+    100% {
+        transform: translateX(-3000px);
+    }
+}
+
+.moving {
+    animation: moving 10s linear infinite;
 }
 
 .intro {
