@@ -209,7 +209,7 @@ main {
 
 .topics {
     margin: 50px auto;
-    max-width: 1200px;
+    max-width: 1220px;
     padding: 0;
 }
 
@@ -219,9 +219,15 @@ main {
 }
 
 .topic-nav-list-item {
-    margin: -7px;
+    margin: -7px -3px;
     /*topicの謎の間隔を詰める用*/
     display: inline-flex;
+}
+
+.topic-nav-list-item:hover {
+    transform: scale(1.01, 1.01);
+    transition: 0.3s;
+    filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651));
 }
 
 .topic-nav-list-item-content {
