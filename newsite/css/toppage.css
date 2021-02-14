@@ -189,16 +189,204 @@ main {
     left: 50%;
 }
 
-.map-object-profile {
+
+/*ゆるキャン△風メニュー*/
+
+.map-object-home {
+    width: 150px;
+    text-align: right;
+    list-style: none;
     position: absolute;
+    font-size: 20px;
     top: -200px;
     left: 300px;
-    width: 0;
-    height: 0;
+}
+
+.map-object-home::before {
+    background-color: #d9376e;
+    width: 50px;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+}
+
+.map-object-home::after {
+    background-color: #d9376e;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+}
+
+.map-object-profile {
+    width: 150px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    font-size: 20px;
+    top: -100px;
+    left: 450px;
+}
+
+.map-object-profile::before {
+    background-color: #d9376e;
+    width: 50px;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+}
+
+.map-object-profile::after {
+    background-color: #d9376e;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+}
+
+.map-object-product {
+    width: 150px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    font-size: 20px;
+    top: 100px;
+    left: 350px;
+}
+
+.map-object-product::before {
+    background-color: #d9376e;
+    width: 50px;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+}
+
+.map-object-product::after {
+    background-color: #d9376e;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+}
+
+.map-object-blog {
+    width: 150px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    font-size: 20px;
+    top: 170px;
+    left: 300px;
+}
+
+.map-object-blog::before {
+    background-color: #d9376e;
+    width: 50px;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+}
+
+.map-object-blog::after {
+    background-color: #d9376e;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+}
+
+
+/*ゆるキャン△風メニュー左側*/
+
+.map-object-link {
+    width: 150px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    font-size: 20px;
+    top: 120px;
+    left: -450px;
+}
+
+.map-object-link::before {
+    background-color: #d9376e;
+    width: 50px;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    transform: translateX(135px) translateY(55px) rotate(60deg);
+}
+
+.map-object-link::after {
+    background-color: #d9376e;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+}
+
+.map-object-contact {
+    width: 150px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    font-size: 20px;
+    top: -120px;
+    left: -550px;
+}
+
+.map-object-contact::before {
+    background-color: #d9376e;
+    width: 50px;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+    transform: translateX(135px) translateY(55px) rotate(60deg);
+}
+
+.map-object-contact::after {
+    background-color: #d9376e;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    height: 4px;
+}
+
+.wrap-triangle {
+    position: relative;
+}
+
+.triangle-right {
+    position: absolute;
+    top: 30px;
+    left: -42%;
     border-style: solid;
     border-width: 43.3px 25px 0 25px;
     border-color: #d9376e transparent transparent transparent;
 }
+
+.triangle-left {
+    position: absolute;
+    top: 30px;
+    left: 109%;
+    border-style: solid;
+    border-width: 43.3px 25px 0 25px;
+    border-color: #d9376e transparent transparent transparent;
+}
+
+
+/*ゆるキャン△風メニューここまで*/
 
 
 /*.topback {
