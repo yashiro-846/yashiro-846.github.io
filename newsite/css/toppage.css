@@ -177,12 +177,36 @@ main {
     background-color: #eff0f3;
 }
 
-.topback {
+.topimg {
+    position: relative;
+}
+
+.map-menu {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.map-object-profile {
+    position: absolute;
+    top: -200px;
+    left: 300px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 43.3px 25px 0 25px;
+    border-color: #d9376e transparent transparent transparent;
+}
+
+
+/*.topback {
     background: url("../img/backtest.jpg");
     width: 100vw;
     height: 507px;
     position: absolute;
-}
+}*/
 
 @keyframes moving {
     100% {
