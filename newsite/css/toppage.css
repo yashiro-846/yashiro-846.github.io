@@ -190,7 +190,7 @@ main {
 }
 
 
-/*ゆるキャン△風メニュー*/
+/*ゆるキャン△風メニュー右*/
 
 .map-object-home {
     width: 150px;
@@ -199,17 +199,17 @@ main {
     position: absolute;
     font-size: 20px;
     top: -200px;
-    left: 300px;
+    left: 350px;
 }
 
 .map-object-home::before {
     background-color: #d9376e;
-    width: 50px;
+    width: 25px;
     border-radius: 2px;
     content: "";
     display: block;
     height: 4px;
-    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+    transform: translateX(-16.5px) translateY(43.5px) rotate(-60deg);
 }
 
 .map-object-home::after {
@@ -227,17 +227,17 @@ main {
     position: absolute;
     font-size: 20px;
     top: -100px;
-    left: 450px;
+    left: 500px;
 }
 
 .map-object-profile::before {
     background-color: #d9376e;
-    width: 50px;
+    width: 25px;
     border-radius: 2px;
     content: "";
     display: block;
     height: 4px;
-    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+    transform: translateX(-16.5px) translateY(43.5px) rotate(-60deg);
 }
 
 .map-object-profile::after {
@@ -255,17 +255,17 @@ main {
     position: absolute;
     font-size: 20px;
     top: 100px;
-    left: 350px;
+    left: 400px;
 }
 
 .map-object-product::before {
     background-color: #d9376e;
-    width: 50px;
+    width: 25px;
     border-radius: 2px;
     content: "";
     display: block;
     height: 4px;
-    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+    transform: translateX(-16.5px) translateY(43.5px) rotate(-60deg);
 }
 
 .map-object-product::after {
@@ -283,17 +283,17 @@ main {
     position: absolute;
     font-size: 20px;
     top: 170px;
-    left: 300px;
+    left: 350px;
 }
 
 .map-object-blog::before {
     background-color: #d9376e;
-    width: 50px;
+    width: 25px;
     border-radius: 2px;
     content: "";
     display: block;
     height: 4px;
-    transform: translateX(-35px) translateY(55px) rotate(-60deg);
+    transform: translateX(-16.5px) translateY(43.5px) rotate(-60deg);
 }
 
 .map-object-blog::after {
@@ -319,12 +319,12 @@ main {
 
 .map-object-link::before {
     background-color: #d9376e;
-    width: 50px;
+    width: 25px;
     border-radius: 2px;
     content: "";
     display: block;
     height: 4px;
-    transform: translateX(135px) translateY(55px) rotate(60deg);
+    transform: translateX(141px) translateY(43.5px) rotate(60deg);
 }
 
 .map-object-link::after {
@@ -347,12 +347,12 @@ main {
 
 .map-object-contact::before {
     background-color: #d9376e;
-    width: 50px;
+    width: 25px;
     border-radius: 2px;
     content: "";
     display: block;
     height: 4px;
-    transform: translateX(135px) translateY(55px) rotate(60deg);
+    transform: translateX(141px) translateY(43.5px) rotate(60deg);
 }
 
 .map-object-contact::after {
@@ -363,30 +363,41 @@ main {
     height: 4px;
 }
 
+
+/*メニューの三角*/
+
 .wrap-triangle {
     position: relative;
 }
 
 .triangle-right {
     position: absolute;
-    top: 30px;
-    left: -42%;
+    top: 9px;
+    left: -35%;
     border-style: solid;
     border-width: 43.3px 25px 0 25px;
     border-color: #d9376e transparent transparent transparent;
+    filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651))
 }
 
 .triangle-left {
     position: absolute;
-    top: 30px;
-    left: 109%;
+    top: 9px;
+    left: 101%;
     border-style: solid;
     border-width: 43.3px 25px 0 25px;
     border-color: #d9376e transparent transparent transparent;
+    filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651))
 }
 
 
 /*ゆるキャン△風メニューここまで*/
+
+.map-menu-list li:hover {
+    transform: scale(1.01, 1.01);
+    transition: 0.1s;
+    filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651));
+}
 
 
 /*.topback {
