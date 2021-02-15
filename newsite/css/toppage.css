@@ -515,20 +515,28 @@ main {
     animation: fadein 1s ease-in-out;
 }
 
-@keyframes fadein {
-    0% {
-        opacity: 0;
-        transform: scale(2);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(0.2);
-    }
-    80% {
-        transform: scale(1.3);
-    }
+.img-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrap::before {
+    animation: img-wrap 3s forwards ease-in;
+    animation-delay: 0.3s;
+    background: #eff0f3;
+    bottom: 0;
+    content: '';
+    left: 500px;
+    pointer-events: none;
+    position: absolute;
+    right: 500px;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes img-wrap {
     100% {
-        transform: scale(1);
+        transform: translateY(-100%);
     }
 }
 
