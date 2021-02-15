@@ -427,7 +427,13 @@ main {
 
 .logo {
     width: 500px;
-    filter: drop-shadow(5px 5px 3px rgba(7, 46, 34, 0.651))
+    filter: drop-shadow(5px 5px 3px rgba(7, 46, 34, 0.651));
+    animation-name: fadein;
+}
+
+@keyframes logo {
+    0% {}
+    100% {}
 }
 
 .topics {
