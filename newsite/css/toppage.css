@@ -521,7 +521,7 @@ main {
 }
 
 .img-wrap::before {
-    animation: img-wrap 3s forwards ease-in;
+    animation: img-wrap 2s forwards ease-in;
     animation-delay: 0.3s;
     background: #eff0f3;
     bottom: 0;
