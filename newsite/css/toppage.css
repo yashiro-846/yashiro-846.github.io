@@ -201,7 +201,7 @@ main {
     top: -200px;
     left: 350px;
     animation: menu-fadein 1s forwards;
-    animation-delay: 2.5s;
+    animation-delay: 2.7s;
     opacity: 0;
 }
 
@@ -232,7 +232,7 @@ main {
     top: -100px;
     left: 500px;
     animation: menu-fadein 1s forwards;
-    animation-delay: 2.2s;
+    animation-delay: 2.4s;
     opacity: 0;
 }
 
@@ -263,7 +263,7 @@ main {
     top: 100px;
     left: 400px;
     animation: menu-fadein 1s forwards;
-    animation-delay: 2.5s;
+    animation-delay: 2.7s;
     opacity: 0;
 }
 
@@ -294,7 +294,7 @@ main {
     top: 170px;
     left: 350px;
     animation: menu-fadein 1s forwards;
-    animation-delay: 2.3s;
+    animation-delay: 2.5s;
     opacity: 0;
 }
 
@@ -328,7 +328,7 @@ main {
     top: 120px;
     left: -450px;
     animation: menu-fadein 1s forwards;
-    animation-delay: 2.2s;
+    animation-delay: 2.4s;
     opacity: 0;
 }
 
@@ -359,7 +359,7 @@ main {
     top: -120px;
     left: -550px;
     animation: menu-fadein 1s forwards;
-    animation-delay: 2.5s;
+    animation-delay: 2.7s;
     opacity: 0;
 }
 
@@ -477,7 +477,7 @@ main {
 
 /*ゆるキャン△風メニューここまで*/
 
-.map-menu-list li:hover {
+.map-menulist li:hover {
     transform: scale(1.01, 1.01);
     transition: 0.1s;
     filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651));
@@ -489,7 +489,7 @@ main {
     width: 100vw;
     height: 507px;
     position: absolute;
-}*/
+}
 
 @keyframes moving {
     100% {
@@ -499,7 +499,7 @@ main {
 
 .moving {
     animation: moving 10s linear infinite;
-}
+}*/
 
 .intro {
     max-width: 1000px;
@@ -518,6 +518,7 @@ main {
 .img-wrap {
     overflow: hidden;
     position: relative;
+    text-align: center;
 }
 
 .img-wrap::before {
@@ -526,10 +527,9 @@ main {
     background: #eff0f3;
     bottom: 0;
     content: '';
-    left: 500px;
+    width: 500px;
     pointer-events: none;
     position: absolute;
-    right: 500px;
     top: 0;
     z-index: 1;
 }
@@ -539,6 +539,33 @@ main {
         transform: translateY(-100%);
     }
 }
+
+
+/*.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-150px, -150px);
+    border-radius: 300px;
+    border: dashed 1px #0d0d0d;
+    background-color: transparent;
+    animation: wave 2s forwards;
+    animation-delay: 2.1s;
+    z-index: 100;
+    opacity: 0;
+}
+
+@keyframes wave {
+    30% {
+        opacity: 1
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0
+    }
+}*/
 
 .topics {
     margin: 50px auto;
