@@ -1,0 +1,643 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    -webkit-text-size-adjust: 100%;
+    position: relative;
+    background-color: #eff0f3;
+}
+
+header {
+    max-width: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: auto;
+    padding: 15px 0;
+    margin: 0;
+    text-align: left;
+    background-color: #2a2a2a;
+    box-shadow: 0px 3px 10px rgba(7, 46, 34, 0.507);
+}
+
+.headline {
+    width: 100%;
+    padding: 15px 15px;
+    text-align: left;
+    font-size: 30px;
+    color: #eff0f3;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 15px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651))
+}
+
+.menu-btn span:before {
+    bottom: 8px;
+    /*メニューの上の棒の位置*/
+}
+
+.menu-btn span:after {
+    top: 8px;
+    /*メニューの下の棒の位置*/
+}
+
+#menu-btn-check:checked~.menu-btn span {
+    /*同じ階層にある要素同士であれば隣接しなくても後者にもスタイル適応*/
+    background-color: rgba(255, 255, 255, 0);
+    /*メニューオープン時はハンバーガーメニューの真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked~.menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+#menu-btn-check:checked~.menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+    /*チェックボックスを非表示*/
+}
+
+.menu {
+    width: 12%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #2a2a2a;
+    transition: all 0.8s;
+}
+
+#menu-btn-check:checked~.menu {
+    left: 88%;
+    /*メニューを画面内へ(100-.menuのwidth=left)*/
+}
+
+.menu-list {
+    padding: 108px 10px 0;
+}
+
+.menu-list-item-now {
+    border-bottom: solid 4px #ff8e3c;
+    list-style: none;
+    padding: 7px;
+}
+
+.menu-list-item-now a {
+    display: block;
+    width: 100%;
+    font-size: 23px;
+    box-sizing: border-box;
+    color: #d9376e;
+    text-decoration: none;
+    padding: 5px 15px 5px 0;
+    position: relative;
+}
+
+.menu-list-item {
+    border-bottom: solid 2px #ff8e3c;
+    list-style: none;
+    padding: 7px;
+}
+
+.menu-list-item a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px 5px 0;
+    position: relative;
+}
+
+.menu-list-item a::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+
+/*--本文--*/
+
+main {
+    width: 100%;
+    text-align: center;
+}
+
+.under-header {
+    width: 100%;
+    position: absolute;
+    top: 108px;
+    z-index: -1;
+}
+
+.description {
+    margin: 10% 0 0 0;
+    padding: 0;
+    color: #0d0d0d;
+    background-color: #eff0f3;
+}
+
+.topimg {
+    position: relative;
+}
+
+.map-menu {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+
+/*ゆるキャン△風メニュー右*/
+
+.map-object-home {
+    width: 70px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    font-size: 15px;
+    top: -180px;
+    left: 60px;
+    animation: menu-fadein 1s forwards;
+    animation-delay: 2.7s;
+    opacity: 0;
+}
+
+.map-object-home::before {
+    background-color: #d9376e;
+    width: 12px;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    transform: translateX(-8.5px) translateY(30px) rotate(-60deg);
+}
+
+.map-object-home::after {
+    background-color: #d9376e;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+}
+
+.map-object-profile {
+    width: 70px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    font-size: 15px;
+    top: -140px;
+    left: 110px;
+    animation: menu-fadein 1s forwards;
+    animation-delay: 2.4s;
+    opacity: 0;
+}
+
+.map-object-profile::before {
+    background-color: #d9376e;
+    width: 12px;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    transform: translateX(-8.5px) translateY(30px) rotate(-60deg);
+}
+
+.map-object-profile::after {
+    background-color: #d9376e;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+}
+
+.map-object-product {
+    width: 70px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    font-size: 15px;
+    top: -50px;
+    left: 180px;
+    animation: menu-fadein 1s forwards;
+    animation-delay: 2.7s;
+    opacity: 0;
+}
+
+.map-object-product::before {
+    background-color: #d9376e;
+    width: 12px;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    transform: translateX(-8.5px) translateY(30px) rotate(-60deg);
+}
+
+.map-object-product::after {
+    background-color: #d9376e;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+}
+
+.map-object-blog {
+    width: 70px;
+    text-align: right;
+    list-style: none;
+    position: absolute;
+    font-size: 15px;
+    top: 50px;
+    left: 150px;
+    animation: menu-fadein 1s forwards;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+.map-object-blog::before {
+    background-color: #d9376e;
+    width: 12px;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    transform: translateX(-8.5px) translateY(30px) rotate(-60deg);
+}
+
+.map-object-blog::after {
+    background-color: #d9376e;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+}
+
+
+/*ゆるキャン△風メニュー左側*/
+
+.map-object-link {
+    width: 70px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    font-size: 15px;
+    top: -90px;
+    left: -210px;
+    animation: menu-fadein 1s forwards;
+    animation-delay: 2.4s;
+    opacity: 0;
+}
+
+.map-object-link::before {
+    background-color: #d9376e;
+    width: 12px;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    transform: translateX(66px) translateY(30px) rotate(60deg);
+}
+
+.map-object-link::after {
+    background-color: #d9376e;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+}
+
+.map-object-contact {
+    width: 70px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    font-size: 15px;
+    top: 0vw;
+    left: -230px;
+    animation: menu-fadein 1s forwards;
+    animation-delay: 2.7s;
+    opacity: 0;
+}
+
+.map-object-contact::before {
+    background-color: #d9376e;
+    width: 12px;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+    transform: translateX(66px) translateY(30px) rotate(60deg);
+}
+
+.map-object-contact::after {
+    background-color: #d9376e;
+    border-radius: 1px;
+    content: "";
+    display: block;
+    height: 2px;
+}
+
+
+/*メニューの三角*/
+
+.wrap-triangle {
+    position: relative;
+}
+
+.triangle-right {
+    position: absolute;
+    top: 14px;
+    left: -39%;
+    border-style: solid;
+    border-width: 20px 12.1px 0 12.1px;
+    border-color: #d9376e transparent transparent transparent;
+    filter: drop-shadow(1px 1px 1.5px rgba(7, 46, 34, 0.651));
+    animation: triangle-fadein 2s forwards;
+    animation-delay: 2s;
+}
+
+.triangle-left {
+    position: absolute;
+    top: 14px;
+    left: 103%;
+    border-style: solid;
+    border-width: 20px 12.1px 0 12.1px;
+    border-color: #d9376e transparent transparent transparent;
+    filter: drop-shadow(1px 1px 1.5px rgba(7, 46, 34, 0.651));
+    animation: triangle-fadein 2s forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes menu-fadein {
+    0% {
+        width: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    35% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        width: 70px;
+        opacity: 1;
+    }
+}
+
+@keyframes triangle-fadein {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*ゆるキャン△風メニューここまで*/
+
+.map-menulist li:hover {
+    transform: scale(1.01, 1.01);
+    transition: 0.1s;
+    filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651));
+}
+
+
+/*.topback {
+    background: url("../img/backtest.jpg");
+    width: 100vw;
+    height: 507px;
+    position: absolute;
+}
+
+@keyframes moving {
+    100% {
+        transform: translateX(-3000px);
+    }
+}
+
+.moving {
+    animation: moving 10s linear infinite;
+}*/
+
+.intro {
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0 30px 0;
+    border-bottom: solid 1.5px #2a2a2a;
+}
+
+.logo {
+    width: 25%;
+    filter: drop-shadow(5px 5px 3px rgba(7, 46, 34, 0.651));
+    animation: fadein 1s ease-in-out;
+}
+
+.img-wrap {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.img-wrap::before {
+    animation: img-wrap 2s forwards ease-in;
+    animation-delay: 0.3s;
+    background: #eff0f3;
+    bottom: 0;
+    content: '';
+    width: 25%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+@keyframes img-wrap {
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/*.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    transform: translate(-150px, -150px);
+    border-radius: 300px;
+    border: dashed 1px #0d0d0d;
+    background-color: transparent;
+    animation: wave 2s forwards;
+    animation-delay: 2.1s;
+    z-index: 100;
+    opacity: 0;
+}
+
+@keyframes wave {
+    30% {
+        opacity: 1
+    }
+    100% {
+        transform: scale(5);
+        opacity: 0
+    }
+}*/
+
+.topics {
+    margin: 50px auto;
+    max-width: 620px;
+    padding: 0;
+}
+
+.topic-title {
+    margin: 30px;
+    padding: 50px;
+    color: #0d0d0d;
+}
+
+.topic-nav-list-item {
+    margin: -7px -3px;
+    /*topicの謎の間隔を詰める用*/
+    display: inline-flex;
+}
+
+.topic-nav-list-item:hover {
+    transform: scale(1.01, 1.01);
+    transition: 0.3s;
+    filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651));
+}
+
+.topic-nav-list-item-content {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-color: #fffffe;
+}
+
+.topic-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.topic-nav-list-item-content-title {
+    font-size: small;
+    color: #fff;
+    background-color: #d9376e;
+}
+
+.topic-nav-list-item-content-subtitle {
+    margin: 5px 10px;
+    padding: 5px;
+    font-size: xx-small;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+.topic-nav-list-item-content-text {
+    opacity: 0;
+    margin: 10px 20px;
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 18px 0;
+    color: #fff;
+    background-color: #2a2a2a;
+}
+
+.footer-menu {
+    padding-bottom: 30px;
+}
+
+.footer-menu li {
+    display: inline;
+    font-size: 15px;
+}
