@@ -29,13 +29,13 @@ header {
     width: 100%;
     padding: 15px 15px;
     text-align: left;
-    font-size: 30px;
+    font-size: 20px;
     color: #eff0f3;
 }
 
 .menu-btn {
     position: fixed;
-    top: 20px;
+    top: 8px;
     right: 15px;
     display: flex;
     height: 60px;
@@ -119,7 +119,7 @@ header {
 .menu-list-item-now a {
     display: block;
     width: 100%;
-    font-size: 23px;
+    font-size: 20px;
     box-sizing: border-box;
     color: #d9376e;
     text-decoration: none;
@@ -136,7 +136,7 @@ header {
 .menu-list-item a {
     display: block;
     width: 100%;
-    font-size: 18px;
+    font-size: 15px;
     box-sizing: border-box;
     color: #fff;
     text-decoration: none;
@@ -146,8 +146,8 @@ header {
 
 .menu-list-item a::before {
     content: "";
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border-top: solid 2px #ffffff;
     border-right: solid 2px #ffffff;
     transform: rotate(45deg);
@@ -622,7 +622,7 @@ main {
 }
 
 .topic-nav-list-item-content-text {
-    opacity: 0;
+    font-size: xx-small;
     margin: 10px 20px;
 }
 

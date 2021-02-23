@@ -620,7 +620,7 @@ main {
 }
 
 .topic-nav-list-item-content-text {
-    opacity: 0;
+    font-size: xx-small;
     margin: 10px 20px;
 }
 
