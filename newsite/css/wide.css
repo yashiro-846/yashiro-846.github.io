@@ -478,7 +478,7 @@ main {
 
 /*ゆるキャン△風メニューここまで*/
 
-.map-menulist li:hover {
+.map-menu-list li:hover {
     transform: scale(1.01, 1.01);
     transition: 0.1s;
     filter: drop-shadow(2px 2px 3px rgba(7, 46, 34, 0.651));
@@ -517,6 +517,8 @@ main {
 }
 
 .img-wrap {
+    width: 500px;
+    margin: auto auto;
     overflow: hidden;
     position: relative;
     text-align: center;

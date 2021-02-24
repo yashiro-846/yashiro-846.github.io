@@ -517,6 +517,7 @@ main {
 }
 
 .img-wrap {
+    margin: auto auto;
     overflow: hidden;
     position: relative;
     text-align: center;
