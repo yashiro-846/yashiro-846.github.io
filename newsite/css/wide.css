@@ -639,3 +639,31 @@ footer {
     display: inline;
     font-size: 20px;
 }
+
+.title {
+    margin: 50px;
+}
+
+.profile-section {
+    display: inline-flex;
+    margin: 50px;
+}
+
+.profile {
+    width: 500px;
+    margin: auto 100px;
+}
+
+.profile h2 {
+    padding: 5px 0 5px 0;
+    margin: 20px;
+    border-bottom: solid 3px #d9376e;
+}
+
+.profile-bottom {
+    margin: auto;
+}
+
+.product-section {
+    display: block;
+}
